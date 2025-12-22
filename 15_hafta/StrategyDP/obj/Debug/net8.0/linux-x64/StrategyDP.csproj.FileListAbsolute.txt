@@ -1,0 +1,15 @@
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/bin/Debug/net8.0/linux-x64/StrategyDP
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/bin/Debug/net8.0/linux-x64/StrategyDP.deps.json
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/bin/Debug/net8.0/linux-x64/StrategyDP.runtimeconfig.json
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/bin/Debug/net8.0/linux-x64/StrategyDP.dll
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/bin/Debug/net8.0/linux-x64/StrategyDP.pdb
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.GeneratedMSBuildEditorConfig.editorconfig
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.AssemblyInfoInputs.cache
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.AssemblyInfo.cs
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.csproj.CoreCompileInputs.cache
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.sourcelink.json
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.dll
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/refint/StrategyDP.dll
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.pdb
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/StrategyDP.genruntimeconfig.cache
+/home/onur/Downloads/oop/DersProjeleri/15_hafta/StrategyDP/obj/Debug/net8.0/linux-x64/ref/StrategyDP.dll
