@@ -1,0 +1,15 @@
+# --- Kendi Çalışmalarını Yok Say ---
+# İsmi "Calisma_" ile başlayan tüm klasörleri görmezden gel
+Calisma_*/
+
+# --- Gereksiz Sistem Dosyalarını Yok Say ---
+# C# derlendiğinde oluşan gereksiz klasörler (bunlar GitHub'a atılmaz)
+**/bin/
+**/obj/
+
+# VS Code ayar klasörü (tercihen atılmaz)
+.vscode/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
