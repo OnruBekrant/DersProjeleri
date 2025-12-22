@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PtAtTv1/5v9XRvzMmgL4XPKtxw1nQRewNuGh2/rPz66DWHzwXKZMyCB0D2iyiDfSNZj7WOEuAAbrt46hWAr/uA==",
+  "success": true,
+  "projectFilePath": "/home/onur/Downloads/oop/DersProjeleri/11_StaticLibrary/11_StaticLibrary.csproj",
+  "expectedPackageFiles": [
+    "/home/onur/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

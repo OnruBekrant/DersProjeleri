@@ -1,0 +1,14 @@
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/bin/Debug/net8.0/linux-x64/10_PolymorphismNotes
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/bin/Debug/net8.0/linux-x64/10_PolymorphismNotes.deps.json
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/bin/Debug/net8.0/linux-x64/10_PolymorphismNotes.runtimeconfig.json
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/bin/Debug/net8.0/linux-x64/10_PolymorphismNotes.dll
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/bin/Debug/net8.0/linux-x64/10_PolymorphismNotes.pdb
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.GeneratedMSBuildEditorConfig.editorconfig
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.AssemblyInfoInputs.cache
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.AssemblyInfo.cs
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.csproj.CoreCompileInputs.cache
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.dll
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/refint/10_PolymorphismNotes.dll
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.pdb
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/10_PolymorphismNotes.genruntimeconfig.cache
+/home/onur/Downloads/DersProjeleri/10_PolymorphismNotes/obj/Debug/net8.0/linux-x64/ref/10_PolymorphismNotes.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IiZdBBd6//jormnCEQvrUW/YBnVwbYGwPTOdiNgFHmJCIPo6nMDhtvV2Fjoia6crtb1mPP4nuMOXtGHSb8aUMA==",
+  "success": true,
+  "projectFilePath": "/home/onur/Downloads/oop/DersProjeleri/15_OCP_PaymentsWeapons/15_OCP_PaymentsWeapons.csproj",
+  "expectedPackageFiles": [
+    "/home/onur/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cTY5n7RgTMAA6ybHnolm4am07oFSdDbjEs/E+4acmGyzkOucTcnE4u+PcHe8SQTjfEDA25DJ1XT6HHp0s6CpYQ==",
+  "success": true,
+  "projectFilePath": "/home/onur/Downloads/oop/DersProjeleri/04_Generics/04_Generics.csproj",
+  "expectedPackageFiles": [
+    "/home/onur/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/bin/Debug/net8.0/linux-x64/03_OperatorOverloading
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/bin/Debug/net8.0/linux-x64/03_OperatorOverloading.deps.json
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/bin/Debug/net8.0/linux-x64/03_OperatorOverloading.runtimeconfig.json
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/bin/Debug/net8.0/linux-x64/03_OperatorOverloading.dll
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/bin/Debug/net8.0/linux-x64/03_OperatorOverloading.pdb
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.GeneratedMSBuildEditorConfig.editorconfig
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.AssemblyInfoInputs.cache
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.AssemblyInfo.cs
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.csproj.CoreCompileInputs.cache
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.dll
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/refint/03_OperatorOverloading.dll
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.pdb
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/03_OperatorOverloading.genruntimeconfig.cache
+/home/onur/Downloads/DersProjeleri/03_OperatorOverloading/obj/Debug/net8.0/linux-x64/ref/03_OperatorOverloading.dll

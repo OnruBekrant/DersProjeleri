@@ -1,0 +1,396 @@
+📂 01_ConstructorsStatic / Program.cs
+
+(Konu: Yapıcı Metotlar ve Static)
+C#
+
+using System;
+
+namespace ConstructorsStatic
+{
+    class Zaman
+    {
+        int gun, ay, yil;
+        static Zaman() { Console.WriteLine("[Zaman] Static Constructor (1 kez çalışır)."); }
+        public Zaman() { gun = DateTime.Now.Day; ay = DateTime.Now.Month; yil = DateTime.Now.Year; }
+        public Zaman(int g, int a, int y) { gun = g; ay = a; yil = y; }
+        public void ZamaniYaz() { Console.WriteLine($"Tarih: {gun}-{ay}-{yil}"); }
+    }
+
+    class Kitap
+    {
+        public string Adi;
+        public static int OduncSayaci = 0; 
+        public void OduncVer() { OduncSayaci++; Console.WriteLine($"{Adi} ödünç verildi. Toplam: {OduncSayaci}"); }
+        public void IadeEt() { OduncSayaci--; Console.WriteLine($"{Adi} iade edildi. Toplam: {OduncSayaci}"); }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Zaman z1 = new Zaman(5, 7, 2030);
+            z1.ZamaniYaz();
+            
+            Kitap k1 = new Kitap { Adi = "Sefiller" };
+            k1.OduncVer();
+            Kitap k2 = new Kitap { Adi = "1984" };
+            k2.OduncVer(); // Sayaç ortak artar
+        }
+    }
+}
+
+📂 02_EncapsulationProperties / Program.cs
+
+(Konu: Get/Set ve Veri Kontrolü)
+C#
+
+using System;
+
+namespace EncapsulationProperties
+{
+    class Ogrenci
+    {
+        private int _yas;
+        public int Yas
+        {
+            get { return _yas; }
+            set {
+                if (value < 0 || value > 150) Console.WriteLine("Hata: Geçersiz yaş!");
+                else _yas = value;
+            }
+        }
+        // Sadece okunabilir property
+        public string OkulAdi { get { return "KTUN"; } }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogrenci o1 = new Ogrenci();
+            o1.Yas = 200; // Hata verir
+            o1.Yas = 25;  // Kabul eder
+            Console.WriteLine($"Öğrenci Yaşı: {o1.Yas}, Okul: {o1.OkulAdi}");
+        }
+    }
+}
+
+📂 03_OperatorOverloading / Program.cs
+
+(Konu: Operatörlerin Ezilmesi +, ==)
+C#
+
+using System;
+
+namespace OperatorOverloading
+{
+    class Kesir
+    {
+        public int Pay, Payda;
+        public Kesir(int p, int pd) { Pay = p; Payda = pd; }
+        
+        public static Kesir operator +(Kesir k1, Kesir k2)
+        {
+            return new Kesir((k1.Pay * k2.Payda) + (k2.Pay * k1.Payda), k1.Payda * k2.Payda);
+        }
+
+        public static bool operator ==(Kesir k1, Kesir k2)
+        {
+            return (double)k1.Pay/k1.Payda == (double)k2.Pay/k2.Payda;
+        }
+        public static bool operator !=(Kesir k1, Kesir k2) { return !(k1 == k2); }
+
+        public override string ToString() { return $"{Pay}/{Payda}"; }
+        public override bool Equals(object obj) { return true; } // Uyarıyı susturmak için
+        public override int GetHashCode() { return 0; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kesir k1 = new Kesir(1, 2);
+            Kesir k2 = new Kesir(1, 4);
+            Kesir k3 = k1 + k2;
+            Console.WriteLine($"Toplam: {k3}"); // Çıktı: 6/8 (veya sadeleşmemiş hali)
+            
+            if(new Kesir(1,2) == new Kesir(2,4)) Console.WriteLine("Kesirler denk.");
+        }
+    }
+}
+
+📂 04_Generics / Program.cs
+
+(Konu: <T> Generic Sınıflar)
+C#
+
+using System;
+
+namespace Generics
+{
+    class Depo<T>
+    {
+        T[] veriler = new T[10];
+        int sayac = 0;
+        public void Ekle(T veri) { veriler[sayac++] = veri; }
+        public T Getir(int index) { return veriler[index]; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Depo<string> isimler = new Depo<string>();
+            isimler.Ekle("Ahmet");
+            Console.WriteLine(isimler.Getir(0));
+
+            Depo<int> sayilar = new Depo<int>();
+            sayilar.Ekle(1923);
+            Console.WriteLine(sayilar.Getir(0));
+        }
+    }
+}
+
+📂 05_AccessModifiers / Program.cs
+
+(Konu: Private, Public, Protected)
+C#
+
+using System;
+
+namespace AccessModifiers
+{
+    class Ata
+    {
+        public int HalkaAcik = 1;
+        protected int AileyeOzel = 2;
+        private int BanaOzel = 3;
+    }
+
+    class Cocuk : Ata
+    {
+        public void Goster()
+        {
+            Console.WriteLine($"Public: {HalkaAcik}");
+            Console.WriteLine($"Protected: {AileyeOzel}");
+            // Console.WriteLine(BanaOzel); // HATA! Private mirasta geçmez.
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cocuk c = new Cocuk();
+            c.Goster();
+            // c.AileyeOzel = 5; // HATA! Protected dışarıdan erişilemez.
+        }
+    }
+}
+
+📂 06_PolymorphismZoo / Program.cs
+
+(Konu: Virtual, Override, New)
+C#
+
+using System;
+
+namespace PolymorphismZoo
+{
+    class Hayvan
+    {
+        public virtual void SesCikar() { Console.WriteLine("Hayvan sesi"); }
+    }
+
+    class Kedi : Hayvan
+    {
+        public override void SesCikar() { Console.WriteLine("Miyav (Override)"); }
+    }
+
+    class Kopek : Hayvan
+    {
+        public new void SesCikar() { Console.WriteLine("Hav Hav (New - Gizleme)"); }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Hayvan h1 = new Kedi();
+            h1.SesCikar(); // ÇIKTI: Miyav (Çünkü override edildi, çekirdek değişti)
+
+            Hayvan h2 = new Kopek();
+            h2.SesCikar(); // ÇIKTI: Hayvan sesi (Çünkü new ile sadece kabuk değişti, referans Hayvan olduğu için asıl metoda gitti)
+        }
+    }
+}
+
+📂 07_AbstractionShapes / Program.cs
+
+(Konu: Abstract Class)
+C#
+
+using System;
+
+namespace AbstractionShapes
+{
+    abstract class Sekil
+    {
+        public abstract void Ciz(); // Gövdesi yok, mecbur ezilecek
+    }
+
+    class Kare : Sekil
+    {
+        public override void Ciz() { Console.WriteLine("Kare çizildi."); }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Sekil s = new Sekil(); // HATA! Abstract new'lenemez.
+            Sekil s = new Kare();
+            s.Ciz();
+        }
+    }
+}
+
+📂 08_SealedConcept / Program.cs
+
+(Konu: Sealed - Kalıtıma Kapalı)
+C#
+
+using System;
+
+namespace SealedConcept
+{
+    class A { public virtual void Yaz() { Console.WriteLine("A"); } }
+    class B : A { public sealed override void Yaz() { Console.WriteLine("B (Mühürlü)"); } }
+    class C : B 
+    { 
+        // public override void Yaz() { } // HATA! B'de mühürlendiği için ezilemez.
+        public new void Yaz() { Console.WriteLine("C (Yeni metod)"); } 
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            new C().Yaz();
+        }
+    }
+}
+
+📂 09_SingletonPattern / Program.cs
+
+(Konu: Tek Nesne Oluşturma)
+C#
+
+using System;
+
+namespace SingletonPattern
+{
+    class Tekil
+    {
+        private static Tekil _nesne;
+        private Tekil() { Console.WriteLine("Nesne oluşturuldu."); } // Private Constructor
+
+        public static Tekil NesneVer()
+        {
+            if (_nesne == null) _nesne = new Tekil();
+            return _nesne;
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Tekil t1 = Tekil.NesneVer();
+            Tekil t2 = Tekil.NesneVer(); // İkinci kez "Nesne oluşturuldu" yazmaz.
+            
+            if(t1 == t2) Console.WriteLine("İkisi de aynı referans.");
+        }
+    }
+}
+using System;
+
+namespace PolymorphismNotes
+{
+    // Ata Sınıf
+    class Varlik
+    {
+        public virtual void HareketEt()
+        {
+            Console.WriteLine("Varlık: Standart hareket ediyor.");
+        }
+
+        public void SesVer()
+        {
+            Console.WriteLine("Varlık: Standart ses veriyor.");
+        }
+    }
+
+    // Çocuk Sınıf 1
+    class Kedi : Varlik
+    {
+        // Override: Çekirdeği değiştiriyoruz (Referans Varlık olsa bile bu çalışır)
+        public override void HareketEt()
+        {
+            Console.WriteLine("Kedi: Süzülerek hareket ediyor (Override).");
+        }
+
+        // New: Sadece Kedi referansında çalışır, Varlık referansında gizlenir.
+        public new void SesVer()
+        {
+            Console.WriteLine("Kedi: Miyav (New).");
+        }
+    }
+
+    // Çocuk Sınıf 2
+    class Kopek : Varlik
+    {
+        public override void HareketEt()
+        {
+            Console.WriteLine("Köpek: Koşarak hareket ediyor (Override).");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("--- 1. DURUM: Kendi Referansları ---");
+            Kedi k1 = new Kedi();
+            k1.HareketEt(); // Kedi gibi
+            k1.SesVer();    // Kedi gibi
+
+            Console.WriteLine("\n--- 2. DURUM: Polymorphism (Ata Referansı) ---");
+            
+            // FOTOĞRAFTAKİ ÖRNEK SENARYO BURADA BAŞLIYOR
+            
+            Varlik v1 = new Varlik(); // Saf Varlık
+            Varlik v2 = k1;           // Kedi nesnesini Varlık kutusuna koyduk (Liskov)
+            Varlik v3 = new Kopek();  // Köpek nesnesini Varlık kutusuna koyduk
+
+            // HareketEt (Virtual/Override olduğu için ÇEKİRDEK çalışır)
+            Console.Write("v1.HareketEt -> "); v1.HareketEt(); 
+            Console.Write("v2.HareketEt -> "); v2.HareketEt(); // Kedi gibi çalışır
+            Console.Write("v3.HareketEt -> "); v3.HareketEt(); // Köpek gibi çalışır
+
+            Console.WriteLine("\n--- Notlar ---");
+            /*
+             FOTOĞRAFTAKİ DERS NOTU:
+             v1, v2, v3 hepsi de Varlik referansı olmasına rağmen
+             HareketEt fonksiyonu hepsinde farklı çalışıyor.
+             Ata sınıf nesnesine aktarsak bile
+             Kedi kediliğini, köpek köpekliğini koruyor.
+             Çünkü çekirdeklerini (override ile) değiştirdik.
+             Buna POLYMORPHISM (Çok Biçimlilik) denir.
+            */
+            Console.WriteLine("Çıktılar incelendiğinde nesnelerin özünü koruduğu görülür.");
+            
+            Console.ReadLine();
+        }
+    }
+}

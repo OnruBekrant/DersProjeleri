@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xYomI3bkaF8p/27LsQpLlfLNsELQxaixRZRGO1ZnyG5V4cV4Qysnk4xJQ1MuXCsaoSybN3mcggY2cyPpY0fKtQ==",
+  "success": true,
+  "projectFilePath": "/home/onur/Downloads/oop/DersProjeleri/05_AccessModifiers/05_AccessModifiers.csproj",
+  "expectedPackageFiles": [
+    "/home/onur/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/onur/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
